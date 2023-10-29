@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Noto+Sans:wght@100;400;800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6b727a;
+}
+
+.font-aldrich {
+    font-family: 'Aldrich', sans-serif;
+}
+
+.font-noto {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main {
+    background: black;
+    width: 80vw;
+    height: 95vh;
+    border-radius: 20px;
+    background-image: radial-gradient(rgba(255,255,255,0.5) 1px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -19px -19px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.action-buttons {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 30px;
+    gap: 10px;
+    background: black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #ed6b5e;
+}
+
+.yellow {
+    background: #f3bc50;
+}
+
+.green {
+    background: #60bf53;
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background: black;
+    transform: scaleY(0.5);
+    letter-spacing: 3px;
+    padding: 5px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black 20%, transparent);
+}
+
+.welcome h2 {
+    color: white;
+    font-weight: 100;
+    font-size: 28px;
+}
+
+.icon-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #02ead2;
+    padding: 13px 25px;
+    transition: background-color 0.5s ease-in;
+}
+
+.icon-button:hover {
+    background-color: rgb(0, 130, 251);
+}
+
+.icon-button button {
+    color: black;
+    font-weight: 800;
+    background: none;
+    font-size: 7px;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.icon-button img {
+    height: 15px;
+    margin-right: 5px;
+}
+
+footer {
+    display: flex;
+    color: #80a2ad;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 40px;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    background: linear-gradient(to right, #01d4d7, #00cdbc);
+    bottom: -400px;
+    transform: rotate(-60deg);
+    filter: blur(70px);
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    background: linear-gradient(to right, #0780f0, #0774e1);
+    bottom: -400px;
+    right: 0;
+    transform: rotate(60deg);
+    filter: blur(70px);
+}
